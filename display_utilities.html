@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Display Utilities</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+			crossorigin="anonymous"
+		/>
+		<style>
+			.third-task-span span {
+				display: inline-block;
+				width: 175px;
+				height: 150px;
+				vertical-align: top;
+			}
+
+			.fourth-task-span span {
+				display: inline-block;
+				width: 210px;
+				height: 105px;
+				vertical-align: top;
+			}
+
+			.fifth-task-span span {
+				display: inline-block;
+				width: 165px;
+				height: 165px;
+				vertical-align: top;
+			}
+
+			#rect {
+				width: 250px;
+				height: 100px;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+			crossorigin="anonymous"
+		></script>
+
+		<!--Task 1-->
+		<div class="container">
+			<h1 class="display-2">
+				Task 1: APPLICATION OF D-NONE, D-INLINE, AND D-BLOCK
+			</h1>
+			<h1 class="bg-dark text-white">This is an example of h1 block</h1>
+			<h1 class="bg-danger text-white d-inline">
+				Example of h1 display inline
+			</h1>
+			<h1 class="bg-warning text-black d-inline">Another h1 display inline</h1>
+			<h1 class="bg-success text-white d-inline-block">
+				Example of h1 display inline block
+			</h1>
+			<h1 class="bg-info text-black d-inline-block">
+				Another h1 display inline block
+			</h1>
+			<h1 class="bg-primary text-white d-none">
+				This is an example of an h1 hidden block
+			</h1>
+			<span class="bg-primary text-white d-block"
+				>This is an example of a block span</span
+			>
+			<span class="bg-dark text-white d-inline"
+				>This is an example of display inline span</span
+			>
+			<span class="bg-danger text-white d-inline"
+				>This is another example of display inline span</span
+			>
+			<h1 class="d-none d-md-block">
+				An example of an h1 hidden when viewport is <strong>XS and SM</strong>
+			</h1>
+			<h1 class="d-none d-lg-block">
+				An example of an h1 hidden when viewport is
+				<strong>XS, SM, and MD</strong>
+			</h1>
+		</div>
+
+		<!--Task 2-->
+		<div class="container pt-5">
+			<h1 class="display-2">TASK 2: BREAKPOINTS WITH DISPLAY CONTROL</h1>
+			<h2>
+				The current size of your viewport is:
+				<span class="d-inline d-sm-none bg-dark text-danger"
+					><strong>XS</strong> size</span
+				>
+				<span class="d-none d-sm-inline d-md-none text-warning"
+					><strong>SM</strong> size</span
+				>
+				<span class="d-none d-md-inline d-lg-none text-success"
+					><strong>MD</strong> size</span
+				>
+				<span class="d-none d-lg-inline d-xl-none text-info"
+					><strong>LG</strong> size</span
+				>
+				<span class="d-none d-xl-inline d-xxl-none text-primary"
+					><strong>XL</strong> size</span
+				>
+				<span class="d-none d-xxl-inline text-muted"
+					><strong>XXL</strong> size</span
+				>
+			</h2>
+		</div>
+
+		<!--Task 3-->
+		<div class="container pt-5">
+			<h1 class="display-2">TASK 3: APPLICATION OF BORDER ADDITIVE</h1>
+			<div class="third-task-span">
+				<span class="m-0 border bg-dark border-info border-4 text-white"
+					>All borders (border) are visible with margin 0</span
+				>
+				<span
+					class="m-1 border-start bg-warning border-primary border-4 text-black"
+					>Only Left border (border-start) is visible with margin 1</span
+				>
+				<span
+					class="m-2 border-end bg-danger border-success border-4 text-white"
+					>Only Right border (border-end) is visible with margin 2</span
+				>
+				<span
+					class="m-3 border-top bg-success border-danger border-4 text-white"
+					>Only Top border (border-top) is visible with margin 3</span
+				>
+				<span
+					class="m-4 border-bottom bg-info border-warning border-4 text-black"
+					>Only Bottom border (border-bottom) is visible with margin 4</span
+				>
+				<span
+					class="m-5 border-start border-end bg-primary border-dark border-4 text-white"
+					>Only Right and Left borders (border-start border-end) are visible
+					with margin 5</span
+				>
+			</div>
+		</div>
+
+		<!--Task 4-->
+		<div class="container pt-5">
+			<h1 class="display-2">TASK 4: APPLICATION OF BORDER SUBTRACTIVE</h1>
+			<div class="fourth-task-span">
+				<span class="pt-0 border-0 bg-dark border-info border-4 text-white"
+					>No borders with padding op 0</span
+				>
+				<span
+					class="pb-1 border border-start-0 bg-warning border-primary border-4 text-black"
+					>All but Right borders with padding bottom 1</span
+				>
+				<span
+					class="py-2 border border-end-0 bg-danger border-success border-4 text-white"
+					>All but Left borders with padding top padding bottom 2</span
+				>
+				<span
+					class="ps-3 border border-top-0 bg-success border-danger border-4 text-white"
+					>All but Top borders with padding left 3</span
+				>
+				<span
+					class="pe-4 border border-bottom-0 bg-info border-warning border-4 text-black"
+					>All but Bottom borders with padding right 4</span
+				>
+				<span
+					class="px-5 border border-start-0 border-end-0 bg-primary border-dark border-4 text-white"
+					>All but Right borders with padding right padding left 5</span
+				>
+			</div>
+		</div>
+
+		<!--Task 5-->
+		<div class="container pt-5">
+			<h1 class="display-2">
+				TASK 5: APPLICATION OF BORDER WIDTH,COLOR AND RADIUS
+			</h1>
+			<div class="fifth-task-span">
+				<span class="border bg-dark border-info border-1 rounded text-white p-4"
+					>Border 1 with rounded corners</span
+				>
+				<span
+					class="border bg-warning border-primary border-2 rounded-top text-black p-4"
+					>Border 2 with rounded top corners</span
+				>
+				<span
+					class="border bg-danger border-success border-3 rounded-end text-white p-4"
+					>Border 3 with rounded end corners</span
+				>
+				<span
+					class="border bg-success border-danger border-4 rounded-bottom text-white p-4"
+					>Border 4 with rounded bottom corners</span
+				>
+				<span
+					class="border bg-info border-warning border-5 rounded-start text-black p-4"
+					>Border 5 with rounded start corners</span
+				>
+				<span
+					class="border bg-dark border-primary border-5 rounded-circle text-white p-4"
+					>Border 5 with rounded circle</span
+				>
+				<span
+					class="border bg-warning border-info border-5 rounded-pill text-black p-4"
+					id="rect"
+					>Border 5 with rounded pill</span
+				>
+			</div>
+		</div>
+
+		<!--Task 6-->
+		<div class="container pt-5">
+			<h1 class="display-2">TASK 6: APPLICATION OF ROUNDED SIZE & SHADOW</h1>
+			<h1
+				class="border border-primary border-1 rounded-0 bg-body text-primary shadow-none p-3 mb-5"
+			>
+				All borders with 0 rounded corner and no shadow (shadow-none)
+			</h1>
+			<h1
+				class="border border-success border-1 rounded-1 bg-body text-success shadow-sm p-3 mb-5"
+			>
+				All borders with 1 rounded corner and small shadow (shadow-sm)
+			</h1>
+			<h1
+				class="border border-danger border-1 rounded-2 bg-body text-danger shadow p-3 mb-5"
+			>
+				All borders with 2 rounded corner and regular shadow (shadow)
+			</h1>
+			<h1
+				class="border border-dark border-1 rounded-3 bg-body text-dark shadow-lg p-3 mb-5"
+			>
+				All borders with 3 rounded corner and large shadow (shadow-lg)
+			</h1>
+		</div>
+	</body>
+</html>
